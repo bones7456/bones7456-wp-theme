@@ -1,0 +1,305 @@
+/*
+Theme Name: Bones7456
+Version: 1.12
+Author: bones7456
+Author URI: http://li2z.cn
+
+Based on Minimalist Fever, Author: Remex URI: http://blog.flyready.com/ [ already shutdown :-( ]
+*/
+
+
+/* Typography & Colors */
+
+body {
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-size: 12px;
+	margin: 1em;
+	background-color:#101010;
+	color:#bbb;
+	font-size: 12px;
+	line-height: 1.4em;
+}
+#header {
+	padding:10px 0 0 0;
+	margin:0px 0 0 5px;
+	letter-spacing: 0.1em;
+	font:normal 35px 'Agency FB', Sans-Serif, 'Trebuchet MS', Arial;
+}
+a {
+	color:#f93;
+	text-decoration:none;
+}
+
+a:hover {
+	background-color:#f92;
+	color:#fff;
+	text-decoration:none;
+}
+
+h1 {
+	color:#b8cde8;
+	font-size:16px;
+	font-weight:bold;
+	padding-bottom:0.5em;
+	border-bottom: 1px dotted #b8cde8;
+}
+
+h2 {
+	color:#f93;
+	font-size:13px;
+	font-weight:bold;
+	padding-bottom:0.5em;
+}
+
+h3 {
+	color:#b8cde8;
+	font-size:12px;
+	font-weight:bold;
+	padding-bottom:0.5em;
+	border-bottom: 1px dotted #b8cde8;
+}
+
+h4 {
+	font-size: 12px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+img {
+	border: none;
+}
+
+address {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 1em 0;
+	padding: 0 0 0 1.2em;
+	border-left: 4px solid #c2cfdf;
+	border-right: 4px solid #c2cfdf;
+}
+
+address {
+	font-style: italic;
+}
+
+dt {
+	margin: 1em 0 .5em 0;
+	font-weight: bold;
+}
+
+code, pre, var {
+	font-size: 1em;
+}
+
+ol {
+	margin-left: 2em;
+}
+
+dd {
+	margin: .5em 0 1em 1.5em;
+}
+
+cite {
+	font-weight: bold;
+	font-style: normal;
+}
+
+#search label {
+	display:none;
+}
+
+input, textarea, select {
+	padding:4px;
+	border:1px solid #880000;
+	font-size:12px;
+	line-height:14px;
+	background-color: #383838;
+	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
+	font-size: 12px;
+	color:#bbbbbb;
+/*	word-wrap: break-word;*/
+}
+
+textarea {
+	width: 98%;
+}
+
+input#author, input#email, input#url {
+	width: 98%;
+}
+
+input#s {
+	width: 120px;
+}
+
+input#submit {
+	width: 150px;
+	height: 30px;
+	padding: 2px 4px;
+	border: 1px solid #880000;
+	background-color: #383838;
+	font: 12px 'Lucida Grande', Verdana, Arial, Sans-Serif;
+}
+
+/* Structure */
+
+#warp {
+	margin-bottom:1.5em;
+}
+
+#content { 
+	background-color:#202020;
+	margin: 0em 18em 0em 0.5em;
+	padding: 0em 1.5em 0em 1.5em;
+	border: solid 1px #880000;
+/*	word-wrap: break-word;*/
+}
+
+.entry img {
+	border: 0px solid #c2cfdf;
+	padding: 3px;
+}
+
+.entry img a{
+	border: 0px solid #c2cfdf;
+	padding: 3px;
+}
+
+.entry { 
+	background-color:#202020;
+	padding: 0em 0.8em 0.8em 0.1em;
+/*	word-wrap: break-word;*/
+}
+
+.entry ul {
+	list-style: none;
+	padding-left:0px;
+	margin-left:2.0em;
+}
+
+.entry li{
+	list-style: disc;
+ 	margin-left:1em;
+}
+
+.postmetadatasingle {
+	margin-top: 4.0em;
+}
+
+#sidebar {
+	width: 15em;
+	float: right;
+	clear: right;
+	background-color:#202020;
+	padding: 0.8em 1em 0.2em 1em;
+	border:solid 1px #880000;
+	margin-bottom:1.5em;
+	color:#999;
+	}
+
+#sidebar h2 {
+	color:#b8cde8;
+	font-size:12px;
+	font-weight:bold;
+	padding:1em 0 0 0;
+	border-bottom: 1px dotted #b8cde8;
+}
+
+#sidebar ul{
+	padding: 0;
+	font-size:12px;
+	color:#666;
+	line-height: 1.8em;
+	list-style: none;
+	margin-left:0px;
+	color:#999;
+}
+
+#sidebar ul li{
+	list-style: none;
+	padding-left:0;
+	color:#999;
+}
+
+#footer{
+	margin: 1em 18em 0em 0.5em;
+	padding: 0em 0.8em 0.2em 0.8em;
+	border:solid 1px #880000;
+	background-color:#202020;
+}
+
+/* Comment Style */
+
+ol.commentlist {
+	background-color: transparent;
+	margin-left: -1em;
+}
+
+html>body ol.commentlist {	margin-left: -4.3em;}
+
+*+html ol.commentlist {
+	margin-left: -1em!important;
+}
+
+.commentlist li {
+	color: #999;
+	padding: 5px 0 0 10px;
+	list-style-type: none;
+	margin-top: 10px;
+/*	word-wrap: break-word;*/
+}
+
+#commentinfo {
+	background-color: #303030;
+}
+
+#commentinfo p{	
+	padding-left: 5px;
+}
+.author-comment {
+	background-color: #404040;
+	padding-left: 5px;
+}
+
+.ping-comment {
+	background-color: #e4fbfd;
+	padding-left: 5px;
+}
+
+/* Navigation Elements */
+
+.navigation {
+	display: block;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 40px;
+	padding-bottom: 5px;
+}
+
+.alignright {
+	float: right;
+}
+
+.alignleft {
+	float: left;
+}
+
+/* ajust coolcode-pulgin style */
+li.hl-firstline {
+    color:#333 !important;
+}
+div.hl-main {
+    color:#333 !important;
+}
+ol.hl-main li {
+    color:#333 !important;
+}
+
+/*fix IE wp_syntax display*/
+.wp_syntax {
+  width: 99% !important;
+}
