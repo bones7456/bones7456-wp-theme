@@ -1,6 +1,6 @@
 /*
 Theme Name: Bones7456
-Version: 1.12
+Version: 1.13
 Author: bones7456
 Author URI: http://li2z.cn
 
@@ -109,6 +109,10 @@ cite {
 }
 
 #search label {
+	display:none;
+}
+/*hide search text in WP2.8*/
+label.screen-reader-text {
 	display:none;
 }
 
