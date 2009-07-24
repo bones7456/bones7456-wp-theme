@@ -1,6 +1,8 @@
 /*
-Theme Name: Bones7456
-Version: 1.13
+Theme info
+Name: Bones7456
+Tags: black,two-columns,flexible-width,custom-header,threaded-comments,translation-ready
+Version: 1.20
 Author: bones7456
 Author URI: http://li2z.cn
 
@@ -9,6 +11,10 @@ Based on Minimalist Fever, Author: Remex URI: http://blog.flyready.com/ [ alread
 
 
 /* Typography & Colors */
+@font-face{
+  font-family: "bonesapa";
+  src: url("boneapa.ttf");
+}
 
 body {
 	font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif;
