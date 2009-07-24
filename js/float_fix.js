@@ -1,3 +1,5 @@
+<script type="text/javascript">
+/* <![CDATA[ */
 // This small script fix IE6/Win "float" bug
 // Original Author: Aaron Boodman, [http://youngpup.net]
 
@@ -7,3 +9,5 @@ function fixWinIE() {
 		document.all.sidebar.style.display='block';
 	}
 }
+/* ]]> */
+</script>

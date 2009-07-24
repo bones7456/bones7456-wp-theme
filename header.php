@@ -18,10 +18,10 @@
 <body>
 <div id="wrap">
 	<div style="width:100%">
-	<span style="margin:0px 0 0 5px;letter-spacing: 0.1em;font:normal 35px Agency FB, Sans-Serif, Trebuchet MS, Arial;">
+	<span style="margin:0px 0 0 5px;letter-spacing: 0.1em;font:normal 35px bonesapa,Agency FB, Sans-Serif, Trebuchet MS, Arial;">
 		<a title="返回首页" href="<?php bloginfo('url'); ?>"><?php bloginfo('name'); ?></a>
 	</span>
-	<span style="margin:10px;letter-spacing: 0.1em;font:normal 14px Agency FB, Sans-Serif, Trebuchet MS, Arial;">
+	<span style="margin:10px;letter-spacing: 0.1em;font:normal 14px bonesapa,Agency FB, Sans-Serif, Trebuchet MS, Arial;">
 		<a title="写新文章" href="<?php bloginfo('url'); ?>/wp-admin/post-new.php"><?php bloginfo('description'); ?></a>
 	</span>
 	</div>
