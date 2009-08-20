@@ -13,7 +13,7 @@
 				<div class="entry">
 					<?php the_content('点击查看全文 &raquo;'); ?>
 				</div>
-				<p class="postmetadata">发表于：<?php the_time('Y年m月d日 H:i') ?> | 分类: <?php the_category(', ') ?> | <?php edit_post_link('编辑', '', ' | '); ?>  <?php comments_popup_link('没有评论 &#187;', '1 个评论 &#187;', '% 个评论 &#187;'); ?></p>
+				<p class="postmetadata">发表于：<?php the_time('Y年m月d日 H:i') ?> | 分类: <?php the_category(', ') ?><?php the_tags(' | 标签: ',', '); ?> | <?php edit_post_link('编辑', '', ' | '); ?>  <?php comments_popup_link('没有评论 &#187;', '1 个评论 &#187;', '% 个评论 &#187;'); ?></p>
 			</div>
 	
 		<?php endwhile; ?>

@@ -1,12 +1,11 @@
 /*
-Theme info
-Name: Bones7456
-Tags: black,two-columns,flexible-width,custom-header,threaded-comments,translation-ready
-Version: 1.20
+Theme Name: Bones7456
+Theme URI: http://li2z.cn
+Description: A sample black-colored, two-columns, flexible-width theme for Chinese.
 Author: bones7456
-Author URI: http://li2z.cn
-
-Based on Minimalist Fever, Author: Remex URI: http://blog.flyready.com/ [ already shutdown :-( ]
+Author URI: http://li2z.cn/about/
+Tags: black,two-columns,flexible-width,custom-header,threaded-comments,translation-ready
+Version: 1.30
 */
 
 
@@ -278,6 +277,12 @@ html>body ol.commentlist {	margin-left: -4.3em;}
 	margin-top: 10px;
 	margin-bottom: 40px;
 	padding-bottom: 5px;
+}
+
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .alignright {
