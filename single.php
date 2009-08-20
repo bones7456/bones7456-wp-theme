@@ -23,7 +23,7 @@
 					<h3>最后修改时间: <?php last_modified('Y年m月d日 H:i'); ?></h3>
 						<small>本文章发表于：
 						<?php the_time('Y年m月d日 H:i') ?>
-						| 所属分类：<?php the_category(', ') ?>.
+						| 所属分类：<?php the_category(', ') ?><?php the_tags(' | 标签: ',', '); ?>.
 						| 您可以<?php comments_rss_link('在此'); ?>订阅本文章的所有评论. | 
 						
 						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
