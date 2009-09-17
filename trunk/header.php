@@ -5,7 +5,6 @@
 <head profile="http://gmpg.org/xfn/11">
 <meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 <title><?php bloginfo('name'); ?><?php wp_title(':'); ?></title>
-<meta name="generator" content="WordPress <?php bloginfo('version'); ?>" />
 <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/float_fix.js"></script>
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="alternate" type="application/atom+xml" title="Atom" href="<?php bloginfo('atom_url'); ?>" />
