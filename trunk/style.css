@@ -11,8 +11,8 @@ Version: 1.30
 
 /* Typography & Colors */
 @font-face{
-  font-family: "bonesapa";
-  src: url("boneapa.ttf");
+	font-family: "bonesapa";
+	src: url("boneapa.ttf");
 }
 
 body {
@@ -295,16 +295,33 @@ html>body ol.commentlist {	margin-left: -4.3em;}
 
 /* ajust coolcode-pulgin style */
 li.hl-firstline {
-    color:#333 !important;
+	color:#333 !important;
 }
 div.hl-main {
-    color:#333 !important;
+	color:#333 !important;
 }
 ol.hl-main li {
-    color:#333 !important;
+	color:#333 !important;
 }
 
 /*fix IE wp_syntax display*/
 .wp_syntax {
-  width: 99% !important;
+	width: 99% !important;
 }
+
+/*google relatedlinks*/
+#relatedlinks_main {
+	width: 15em !important;
+	height: auto !important;
+}
+.relatedlinks-div-title {
+	display: none !important;
+}
+.relatedlinks-a-links {
+	font-size:14px !important; 
+}
+.relatedlinks-a-links:hover {
+	background-color:#f92 !important;
+	color:#fff !important;
+}
+
