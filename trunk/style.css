@@ -5,7 +5,7 @@ Description: A sample black-colored, two-columns, flexible-width theme for Chine
 Author: bones7456
 Author URI: http://li2z.cn/about/
 Tags: black,two-columns,flexible-width,custom-header,threaded-comments,translation-ready
-Version: 1.30
+Version: 1.31
 */
 
 
@@ -76,6 +76,7 @@ blockquote {
 	padding: 0 0 0 1.2em;
 	border-left: 4px solid #c2cfdf;
 	border-right: 4px solid #c2cfdf;
+	background-color:#383838;
 }
 
 address {
