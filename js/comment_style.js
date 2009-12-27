@@ -1,4 +1,3 @@
-<script type="text/javascript">
 /* <![CDATA[ */
 function listExpand(list)
 {
@@ -8,7 +7,7 @@ function listExpand(list)
 }
 function listContract(list)
 {
-   list.style.height="20px";
+   list.style.height="18px";
    list.style.overflow="hidden";
    list.style.backgroundColor="#202020";
 }
@@ -23,5 +22,4 @@ for (var i = 0; i < els.length; i++)
    }
 }
 /* ]]> */
-</script>
 
