@@ -1,9 +1,8 @@
 <div id="sidebar">
 
 <ul>
-	
 	<li>
-		<h2>导航</h2>
+		<h2><a href="javascript:void(0);" onclick="hide_sidebar()" title="点击隐藏侧栏">导航</a></h2>
 			<ul>
 				<li><a title="Home" href="<?php bloginfo('url'); ?>">Home</a></li>
 				<?php wp_list_pages('title_li=&depth=1' ); ?>
