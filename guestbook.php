@@ -5,8 +5,7 @@ Template Name: GuestBook
 ?>
 
 <?php get_header(); ?>
-<?php get_sidebar(); ?>
-
+<div class="contentout">
 <div id="content">
   
   <?php if (have_posts()) : the_post(); ?>
@@ -28,6 +27,9 @@ Template Name: GuestBook
     <p><?php _e('No Entries found.'); ?></p>
   <?php endif; ?>
 
-</div><!--/content -->
-
+</div>
 <?php get_footer(); ?>
+</div>
+
+<?php get_sidebar(); ?>
+<div class="blank"></div>

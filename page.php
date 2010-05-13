@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
-
+<div class="contentout">
 	<div id="content">
 
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -17,5 +16,8 @@
 	  <?php endwhile; endif; ?>
 	<?php edit_post_link('编辑本页.', '<p>', '</p>'); ?>
 	</div>
+	<?php get_footer(); ?>
+</div>
 
-<?php get_footer(); ?>
+<?php get_sidebar(); ?>
+<div class="blank"></div>

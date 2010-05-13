@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
-
+<div class="contentout">
 	<div id="content">
 		<div class="navigation">
 			<div class="alignleft">« <a title="回到首页" href="<?php bloginfo('url'); ?>">回到首页</a></div>
@@ -23,5 +22,8 @@
 			</div>
 		</div>
 	</div>
+	<?php get_footer(); ?>
+</div>
 
-<?php get_footer(); ?>
+<?php get_sidebar(); ?>
+<div class="blank"></div>
