@@ -1,7 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
-
+<div class="contentout">
 	<div id="content">
 
 	<?php if (have_posts()) : ?>
@@ -33,5 +32,9 @@
 	<?php endif; ?>
 
 	</div>
+	<?php get_footer(); ?>
+</div>
 
-<?php get_footer(); ?>
+<?php get_sidebar(); ?>
+<div class="blank"></div>
+

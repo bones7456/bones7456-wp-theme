@@ -40,6 +40,7 @@
     		</ul>	
 	</li>
 	<?php endif; ?>
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/comment_style.js"></script>
 </ul>
 
 </div>

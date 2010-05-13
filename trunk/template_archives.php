@@ -5,8 +5,7 @@ Template Name: Archives
 ?>
 <?php get_header(); ?>
 
-<?php get_sidebar(); ?>
-
+<div class="contentout">
 <div id="content">
 
 	<div class="entry">
@@ -25,5 +24,8 @@ Template Name: Archives
 	</div>
 
 </div>
-
 <?php get_footer(); ?>
+</div>
+
+<?php get_sidebar(); ?>
+<div class="blank"></div>
