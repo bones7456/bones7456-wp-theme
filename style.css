@@ -337,3 +337,84 @@ ol.hl-main li {
 	clear: both;
 }
 
+/* ========================= */
+/* Responsive design for mobile view */
+/* ========================= */
+#sidebar-toggle {
+    display: none;
+}
+#sidebar #close-sidebar {
+    display: none;
+}
+.mobile-break {
+	display: none;
+}
+@media screen and (max-width: 768px) {
+    /* 去掉body、wrap等多余的margin，让移动端更紧凑 */
+    body {
+        margin: 0;
+    }
+    #wrap {
+        margin: 0;
+    }
+
+    /* 隐藏老的Sidebar浮动，让它变成在移动端固定到右侧的一个面板 */
+    #sidebar {
+        display: none; /* 默认隐藏 */
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 240px;         /* 侧边栏宽度可自行调整 */
+        height: 100%;         /* 占满可视区高度 */
+        background-color: #202020;
+        overflow-y: auto;
+        z-index: 9999;
+        padding: 1em;
+        box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+    }
+
+    /* 当JS切换了 .open 类时，显示sidebar */
+    #sidebar.open {
+        display: block;
+    }
+
+    /* 让content全宽显示，不再给sidebar腾出右边的空间 */
+    .contentout {
+        float: none;
+        width: auto;
+        margin-right: 0 !important;
+    }
+    #content {
+        margin-right: 0 !important;
+        width: auto;
+    }
+    #footer {
+        margin-right: 0 !important;
+        width: auto;
+    }
+
+    /* 显示“菜单”按钮 */
+    #sidebar-toggle {
+        display: inline-block;
+        float: right;
+        margin: 10px;
+        padding: 8px 12px;
+        background-color: #444;
+        color: #fff;
+        border: 1px solid #888;
+        cursor: pointer;
+        font-size: 16px;
+    }
+	#sidebar #close-sidebar {
+		display: block;
+		margin: 10px 0;
+		background-color: #444;
+		color: #fff;
+		border: 1px solid #888;
+		padding: 8px 12px;
+		cursor: pointer;
+	}
+	.mobile-break {
+		display: block;  /* 这样就会换行了 */
+	}
+}
