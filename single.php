@@ -10,20 +10,24 @@
 			<div class="alignright"><?php next_post_link('%link &raquo;') ?></div>
 		</div>
 	
-		<div class="post" id="post-<?php the_ID(); ?>">
+		<div class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 			<h1><a href="<?php echo get_permalink() ?>" rel="bookmark" title="永久链接: <?php the_title(); ?>"><?php the_title(); ?></a></h1>
-	
+			<?php if (has_post_thumbnail()) : ?>
+				<div class="post-thumbnail">
+					<?php the_post_thumbnail('large'); ?>
+				</div>
+			<?php endif; ?>
 			<div class="entry">
 				<?php the_content(); ?>
 	
-				<?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
+				<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'link_before' => '', 'link_after' => '')); ?>
 	
 				<p class="postmetadatasingle">
 					<h3>最后修改时间: <?php last_modified('Y年m月d日 H:i'); ?></h3>
 						<small>本文章发表于：
 						<?php the_time('Y年m月d日 H:i') ?>
 						| 所属分类：<?php the_category(', ') ?><?php the_tags(' | 标签: ',', '); ?>.
-						| 您可以<?php comments_rss_link('在此'); ?>订阅本文章的所有评论. | 
+						| 您可以<?php post_comments_feed_link('在此'); ?>订阅本文章的所有评论. | 
 						
 						<?php if (('open' == $post-> comment_status) && ('open' == $post->ping_status)) {
 							// Both Comments and Pings are open ?>

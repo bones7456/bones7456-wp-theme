@@ -7,8 +7,13 @@
 		
 		<?php while (have_posts()) : the_post(); ?>
 				
-			<div class="post" id="post-<?php the_ID(); ?>">
+			<div class="post" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 				<h1><a href="<?php the_permalink() ?>" rel="bookmark" title="到 <?php the_title(); ?> 的永久链接"><?php the_title(); ?></a></h1>
+				<?php if (has_post_thumbnail()) : ?>
+					<div class="post-thumbnail">
+						<?php the_post_thumbnail('medium'); ?>
+					</div>
+				<?php endif; ?>
 				<div class="entry">
 					<?php the_content('点击查看全文 &raquo;'); ?>
 				</div>
@@ -26,7 +31,7 @@
 
 		<h2>Not Found</h2>
 		<p>Sorry, but you are looking for something that isn't here.</p>
-				<form id="searchform" method="get" action="<?php echo get_settings('siteurl'); ?>/index.php">
+				<form id="searchform" method="get" action="<?php echo esc_url(home_url('/')); ?>">
 			<p>Search:&nbsp; <input type="text" name="s" size="15" /></p></form>
 
 	<?php endif; ?>

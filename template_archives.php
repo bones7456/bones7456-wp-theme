@@ -14,13 +14,13 @@ Template Name: Archives
 
 	<h3>Last 100 Articles</h3>
 		<ul>
-		<?php get_archives('postbypost', '100', 'custom', '<li>', '</li>'); ?></ul>
+		<?php wp_get_archives('type=postbypost&limit=100&format=custom&before=<li>&after=</li>'); ?></ul>
 	</div>
 
 	<div class="entry">
 		<h3>Whole Articles</h3>
 		<ul>
-			<?php get_archives('monthly', '', 'html', '', '', true); ?></ul>
+			<?php wp_get_archives('type=monthly&format=html&show_post_count=true'); ?></ul>
 	</div>
 
 </div>

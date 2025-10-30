@@ -16,7 +16,7 @@ Template Name: GuestBook
 
         <div class="post-content">
 			<?php the_content('Read the rest of this page &raquo;'); ?>
-            <?php link_pages('<p><strong>Pages:</strong> ', '</p>', 'number'); ?>
+            <?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'link_before' => '', 'link_after' => '')); ?>
         </div>
 
 		<?php comments_template(); // Get wp-comments.php template ?>
@@ -24,7 +24,7 @@ Template Name: GuestBook
     </div><!-- [post] -->
 	
   <?php else: ?>
-    <p><?php _e('No Entries found.'); ?></p>
+    <p><?php _e('No Entries found.', 'bones7456'); ?></p>
   <?php endif; ?>
 
 </div>

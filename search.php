@@ -30,7 +30,7 @@
 	<?php else : ?>
 
 		<h2>没找到相关的结果，试试其他的关键字？</h2>
-		<form id="searchform" method="get" action="<?php echo get_settings('siteurl'); ?>/index.php">
+		<form id="searchform" method="get" action="<?php echo esc_url(home_url('/')); ?>">
 			<p>搜索:&nbsp; <input type="text" name="s" size="15" /></p></form>
 
 	<?php endif; ?>

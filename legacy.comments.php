@@ -70,8 +70,8 @@
 
 <?php else : ?>
 
-<p><label for="author"><small>姓名 <?php if ($req) _e('(必须)'); ?>:</small></label><br /><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="40" tabindex="1" /></p>
-<p><label for="email"><small>邮件地址 (不会公开) <?php if ($req) _e('(必须)'); ?>:</small></label><br /><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="40" tabindex="2" /></p>
+<p><label for="author"><small>姓名 <?php if ($req) _e('(必须)', 'bones7456'); ?>:</small></label><br /><input type="text" name="author" id="author" value="<?php echo $comment_author; ?>" size="40" tabindex="1" /></p>
+<p><label for="email"><small>邮件地址 (不会公开) <?php if ($req) _e('(必须)', 'bones7456'); ?>:</small></label><br /><input type="text" name="email" id="email" value="<?php echo $comment_author_email; ?>" size="40" tabindex="2" /></p>
 <p><label for="url"><small>个人主页:</small></label><br /><input type="text" name="url" id="url" value="<?php echo $comment_author_url; ?>" size="40" tabindex="3" /></p>
 
 <?php endif; ?>

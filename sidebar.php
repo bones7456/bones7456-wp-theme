@@ -4,7 +4,7 @@
     <li>
         <h2>导航</h2>
         <ul>
-            <li><a title="Home" href="<?php bloginfo('url'); ?>">Home</a></li>
+            <li><a title="Home" href="<?php echo esc_url(home_url('/')); ?>">Home</a></li>
             <?php wp_list_pages('title_li=&depth=1' ); ?>
         </ul>
     </li>
@@ -12,7 +12,7 @@
     <li>
         <h2>Categories</h2>
             <ul>
-                <?php wp_list_cats('sort_column=name&optioncount=1&hierarchical=0'); ?>
+                <?php wp_list_categories('sort_column=name&optioncount=1&hierarchical=0'); ?>
             </ul>
     </li>
 
@@ -27,8 +27,8 @@
             <ul>
                 <?php wp_register(); ?>
                 <li><?php wp_loginout(); ?></li>
-                <li><a href="http://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Strict">Valid XHTML</a></li>
-                <li><a href="http://gmpg.org/xfn/" title="XHTML Friends Network">XFN</a></li>
+                <li><a href="https://validator.w3.org/check/referer" title="This page validates as XHTML 1.0 Strict">Valid XHTML</a></li>
+                <li><a href="https://gmpg.org/xfn/" title="XHTML Friends Network">XFN</a></li>
                 <?php wp_meta(); ?>
             </ul>
     </li>
@@ -36,13 +36,13 @@
     <li>
         <h2>Links</h2>
             <ul>
-                <?php get_links('-1', '<li>', '</li>', '<br />', FALSE, 'id', TRUE, TRUE, -1, TRUE); ?>
+                <?php wp_list_bookmarks('title_li=&categorize=0&show_description=1'); ?>
             </ul>
     </li>
     <?php endif; ?>
 
     <!-- 原有的comment_style.js可保持引入，也可视情况移动到footer等。 -->
-    <script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/js/comment_style.js"></script>
+    <script type="text/javascript" src="<?php echo esc_url(get_stylesheet_directory_uri()); ?>/js/comment_style.js"></script>
 </ul>
 
 </div>

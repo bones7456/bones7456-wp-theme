@@ -1,11 +1,33 @@
 /*
 Theme Name: Bones7456
-Theme URI: http://li2z.cn
-Description: A sample black-colored, two-columns, flexible-width theme for Chinese.
+Theme URI: https://luy.li/
+Description: A modern black-colored, two-columns, responsive theme optimized for Chinese content. Features mobile-first design, threaded comments, and clean typography.
 Author: bones7456
-Author URI: http://li2z.cn/about/
-Tags: black,two-columns,flexible-width,custom-header,threaded-comments,translation-ready
-Version: 1.34
+Author URI: https://luy.li/about/
+Version: 1.36
+License: GPL v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bones7456
+Tags: two-columns, custom-header, threaded-comments, translation-ready, blog, custom-colors, featured-images, footer-widgets, full-width-template, left-sidebar, right-sidebar, sticky-post, theme-options
+Requires at least: 5.0
+Tested up to: 6.4
+Requires PHP: 7.4
+
+Copyright (C) 2009-2025 bones7456
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along
+with this program; if not, write to the Free Software Foundation, Inc.,
+51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
 */
 
 
@@ -335,6 +357,66 @@ ol.hl-main li {
 }
 .blank {
 	clear: both;
+}
+
+/* WordPress recommended CSS classes */
+.wp-caption {
+	max-width: 100%;
+}
+
+.wp-caption-text {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+}
+
+.sticky {
+	background-color: #333;
+	border: 1px solid #555;
+}
+
+.gallery-caption {
+	font-size: 11px;
+	line-height: 17px;
+	padding: 0 4px 5px;
+}
+
+.bypostauthor {
+	background-color: #404040;
+}
+
+/* Post thumbnail styles */
+.post-thumbnail {
+	margin: 1em 0;
+	text-align: center;
+}
+
+.post-thumbnail img {
+	max-width: 100%;
+	height: auto;
+	border: 1px solid #880000;
+}
+
+/* Block styles */
+.wp-block-button.is-style-bones7456-button .wp-block-button__link {
+	background-color: #f93;
+	color: #fff;
+	border: 1px solid #880000;
+	padding: 8px 16px;
+	text-decoration: none;
+}
+
+.wp-block-button.is-style-bones7456-button .wp-block-button__link:hover {
+	background-color: #f92;
+	color: #fff;
+}
+
+.wp-block-quote.is-style-bones7456-quote {
+	border-left: 4px solid #c2cfdf;
+	border-right: 4px solid #c2cfdf;
+	background-color: #383838;
+	padding: 0 0 0 1.2em;
+	margin: 1em 0;
 }
 
 /* ========================= */

@@ -46,7 +46,7 @@ function quote_comment($text = 'quote', $aftername = '', $displaywhen = TRUE, $b
 	$post_mod_date = $wpdb->get_var("SELECT post_modified FROM $wpdb->posts WHERE id = $id");
 
 	if (empty($format))
-		$format = get_settings('date_format') . ' @ ' . get_settings('time_format');
+		$format = get_option('date_format') . ' @ ' . get_option('time_format');
 
 	echo mysql2date($format, $post_mod_date);
 }
@@ -59,7 +59,7 @@ function highlight_comment ()
 {
 	global $comment, $user_email, $comment_author_email, $posts;
 	$authordata = get_userdata($posts[0]->post_author);
-	get_currentuserinfo();
+	$current_user = wp_get_current_user();
 
 	if ( ($comment->comment_author_email) AND (get_comment_type() == 'comment') )
 	{

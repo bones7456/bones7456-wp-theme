@@ -56,7 +56,7 @@
 	<?php else : ?>
 
 		<h2>Not Found</h2>
-			<form id="searchform" method="get" action="<?php echo get_settings('siteurl'); ?>/index.php">
+			<form id="searchform" method="get" action="<?php echo esc_url(home_url('/')); ?>">
 			<p>Search:&nbsp; <input type="text" name="s" size="15" /></p></form>
 	<?php endif; ?>
 		

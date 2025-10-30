@@ -3,11 +3,11 @@
 <div class="contentout">
 	<div id="content">
 		<div class="navigation">
-			<div class="alignleft">« <a title="回到首页" href="<?php bloginfo('url'); ?>">回到首页</a></div>
+			<div class="alignleft">« <a title="回到首页" href="<?php echo esc_url(home_url('/')); ?>">回到首页</a></div>
 			<div class="alignright"></div>
 		</div>
 		<div class="post" id="post-404">
-			<h1><a href="<?php bloginfo('url'); ?>" rel="bookmark" title="永久链接: <?php bloginfo('url'); ?>">这是一个看起来像模像样的标题</a></h1>
+			<h1><a href="<?php echo esc_url(home_url('/')); ?>" rel="bookmark" title="永久链接: <?php echo esc_url(home_url('/')); ?>">这是一个看起来像模像样的标题</a></h1>
 	
 			<div class="entry">
 				从前有座山，山上有个庙，庙里有一个老和尚和一个小和尚，老和尚在给小和尚讲故事，老和尚讲的故事是：<br>
