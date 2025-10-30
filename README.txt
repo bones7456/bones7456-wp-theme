@@ -4,7 +4,7 @@ Tags: black, two-columns, flexible-width, responsive, custom-header, threaded-co
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 7.4
-Stable tag: 1.35
+Stable tag: 1.36
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -76,6 +76,11 @@ Yes, the theme is specifically optimized for Chinese content with custom font su
 
 == Changelog ==
 
+= 1.36 =
+* Updated version to 1.36
+* Enhanced theme stability
+* Improved performance optimizations
+
 = 1.35 =
 * Updated theme header information
 * Improved mobile responsiveness
@@ -88,6 +93,9 @@ Yes, the theme is specifically optimized for Chinese content with custom font su
 * Chinese language support
 
 == Upgrade Notice ==
+
+= 1.36 =
+This version includes enhanced theme stability and improved performance optimizations.
 
 = 1.35 =
 This version includes improved mobile responsiveness and better Chinese typography support.
