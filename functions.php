@@ -142,3 +142,12 @@ function bones7456_comment($comment, $args, $depth) {
         </div>
 <?php
 }
+
+// 移除不必要的图片尺寸
+add_filter('big_image_size_threshold', '__return_false');
+add_filter('intermediate_image_sizes_advanced', function ($sizes) {
+    foreach (['medium_large', '1536x1536', '2048x2048'] as $s) {
+        unset($sizes[$s]);
+    }
+    return $sizes;
+});
